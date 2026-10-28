@@ -1,0 +1,97 @@
+# ==============================================================================
+# GoodNotes Audio Processor & Transcriber - .gitignore
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Python Artifacts & Virtual Environments
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Packaging, builds, distribution
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+
+# Testing and type checking caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ------------------------------------------------------------------------------
+# 2. Shell, Runtime, & Environment Configurations
+# ------------------------------------------------------------------------------
+*.log
+*.pid
+.env
+.env.*
+!.env.example
+
+# ------------------------------------------------------------------------------
+# 3. Editor & Operating System Artifacts
+# ------------------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+
+# Editors & IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.bak
+
+# ------------------------------------------------------------------------------
+# 4. Project-Specific: Inputs, Audio Outputs, & Intermediate Files
+# ------------------------------------------------------------------------------
+# Raw GoodNotes documents & archives (keep folder via .gitkeep)
+inputs/*
+!inputs/.gitkeep
+*.goodnotes
+*.goodnotes.zip
+
+# Audio output files (keep folder via .gitkeep)
+filtered/*
+!filtered/.gitkeep
+audio/*
+!audio/.gitkeep
+to_filter/
+
+# Audio binary extensions & temporary chunks
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.ogg
+*.flac
+*.tmp*
+
+# Transcripts & local notes (keep folder via .gitkeep)
+transcripts/*
+!transcripts/.gitkeep
