@@ -86,7 +86,7 @@ An automated, end-to-end command-line tool that extracts audio recordings from *
 
 1. **Clone the repository**:
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/mattee02/goodnotes-audio-transcriber.git
    cd goodnotes-audio-transcriber
    ```
 
